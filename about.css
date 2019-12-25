@@ -1,0 +1,31 @@
+.aboutMain {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+}
+
+.aboutMain > header > h1 {
+    font-size: 30px;
+}
+
+.aboutMain > section > .intro {
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.aboutMain > section > p {
+    padding-top: 20px;
+}
+
+.aboutMain > footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+}
