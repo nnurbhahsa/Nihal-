@@ -31,19 +31,16 @@ p {
     justify-content: space-around;
 }
 
-button {
-    border: solid 2px #066474;
-    padding: 8px;
-    color: white;
-    background-color: black;
-    font-size: 12px;
+.projectMain > section > .description > .projectLinks > a{
+    color: #066474;
+    text-decoration: none;
 }
 
-button:hover {
+/* a:hover {
     border: solid 2px #066474;
-    color: white;
+    color: #066474;
     background-color: #066474;
-}
+} */
 
 @media screen and (min-width: 750px) {
     .projectMain > section > img {
