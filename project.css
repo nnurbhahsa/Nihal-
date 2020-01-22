@@ -39,6 +39,8 @@ p {
 }
 
 .projectMain > section > .description > .projectLinks > a {
+    margin-left: 10px;
+    margin-right: 10px;
     color: #066474;
     text-decoration: none;
 }
