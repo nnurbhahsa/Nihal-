@@ -1,127 +1,181 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nihal Nurbhasha</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
     <header>
-      <div class="menu-toggler">
-        <div class="bar half start"></div>
-        <div class="bar"></div>
-        <div class="bar half end"></div>
+      <div class="logo">
+        <img src="images/start.jpg" alt="" />
       </div>
 
-      <nav class="top-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="index.html" class="nav-link">HOME</a>
+      <button class="nav-toogle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
           </li>
-          <li>
-            <a href="#about" class="nav-link">ABOUT</a>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
           </li>
-          <li>
-            <a href="#projects" class="nav-link">PROJECTS</a>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
           </li>
-          <li>
-            <a href="#experiences" class="nav-link">EXPERIENCE</a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link">CONTACT</a>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projects</a>
           </li>
         </ul>
       </nav>
-
-      <div class="landing-text">
-        <h1>Nihal Nurbhasha</h1>
-        <h6>Software Engineer</h6>
-      </div>
     </header>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="pofile-img">
-          <img src="images/nihal.jpg" alt="" />
-        </div>
-        <div class="about-details">
-          <div class="about-heading">
-            <h1>About</h1>
-            <h6>Myself</h6>
-          </div>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Nihal Nurbhasha</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        front-end dev
+      </p>
+      <img src="images/end.jpg" alt="picture of Nihal smiling" />
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <h2 class="section__title section__title--services">
+        What I do
+      </h2>
+
+      <div class="services">
+        <div class="service">
+          <h3>Design + Development</h3>
           <p>
-            text area text area text area text area text area text area text
-            area text area text area text area text area text area text area
-            text area text area text area
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
           </p>
         </div>
-        <div class="social-media">
-          <ul class="nav-list">
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-          </ul>
+        <!-- /service -->
+
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
+          </p>
         </div>
+        <!-- /service -->
+
+        <div class="service">
+          <h3>WordPress</h3>
+          <p>
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
+            placeholder text placeholder text placeholder text placeholder text
+          </p>
+        </div>
+        <!-- /service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">Projects</a>
+    </section>
+
+    <!-- About -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__subtitle--about">
+        Who I am
+      </h2>
+      <p class="section__subtitle section__subtitle--about">
+        placeholder text placeholder text placeholder text placeholder text
+        placeholder text placeholder text placeholder text placeholder text
+        placeholder text placeholder text placeholder text placeholder text
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          placeholder text placeholder text placeholder text placeholder text
+          placeholder text placeholder text placeholder text placeholder text
+          placeholder text placeholder text placeholder text placeholder text
+        </p>
+        <p>
+          placeholder text placeholder text placeholder text placeholder text
+          placeholder text placeholder text placeholder text placeholder text
+          placeholder text placeholder text placeholder text placeholder text
+        </p>
+      </div>
+
+      <img src="images/nihal.jpg" alt="Nihal Nurbhasha" />
+    </section>
+
+    <!-- Projects -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">Projects</h2>
+      <p class="section__subtitle">
+        placeholder text placeholder text placeholder text placeholder text
+        placeholder text placeholder text placeholder text placeholder text
+        placeholder text placeholder text placeholder text placeholder text
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/stock-forecaster.jpg" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/stock-forecaster.jpg" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/stock-forecaster.jpg" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/stock-forecaster.jpg" class="portfolio__img" />
+        </a>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Services</h1>
-          <h6>What I can do for you</h6>
-        </div>
-        <div class="my-skills">
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-layer-group"></i>
-            </div>
-            <h1>Web Design</h1>
-            <p>
-              text area text area text area text area text area text area text
-              area text area text area text area text area text area text area
-              text area text area text area
-            </p>
-          </div>
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-code-group"></i>
-            </div>
-            <h1>Web Development</h1>
-            <p>
-              text area text area text area text area text area text area text
-              area text area text area text area text area text area text area
-              text area text area text area
-            </p>
-          </div>
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-chart-group"></i>
-            </div>
-            <h1>Product Strategy</h1>
-            <p>
-              text area text area text area text area text area text area text
-              area text area text area text area text area text area text area
-              text area text area text area
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:nihal.nurbhasha@gmail.com" class="footer__link">
+        nihal.nurbhasha@gmail.com
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://codepen.io" class="social-list__link">a</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://codepen.io" class="social-list__link">b</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://codepen.io" class="social-list__link">c</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://codepen.io" class="social-list__link">d</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
